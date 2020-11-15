@@ -1,7 +1,7 @@
-#Requirements Second Factor
-#Milestone 2
+# Requirements Second Factor
+# Milestone 2
 
-##Front-end
+## Front-end
 
 **Must have**
 
@@ -17,7 +17,7 @@
 * Na een correcte log-in met admin-gegevens wordt een beheerderspagina getoond met extra informatie zoals ingelogde gebruikers, timestamps, etc.
 
 
-##Back-end 
+## Back-end 
 
 **Must have**
 
@@ -35,7 +35,7 @@
 * Er kunnen combinaties van kleuren aan een log-in gekoppeld worden. 
 
 
-##Arduino
+## Arduino
 
 **Must have**
 
