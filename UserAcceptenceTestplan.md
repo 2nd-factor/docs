@@ -3,7 +3,7 @@
 #Milestone 2
 
 
-##Login met gebr. naam en ww
+##Login met gebruikersnaam en wachtwoord
 
 ###Test 1
 
