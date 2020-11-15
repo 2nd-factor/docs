@@ -1,11 +1,11 @@
-#User Acceptance Test
-#Second Factor
-#Milestone 2
+# User Acceptance Test
+# Second Factor
+# Milestone 2
 
 
-##Login met gebruikersnaam en wachtwoord
+## Login met gebruikersnaam en wachtwoord
 
-###Test 1
+### Test 1
 
 **Instructie:**
 De gebruiker vult correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de log-in knop.
@@ -18,7 +18,7 @@ De gebruiker krijgt een kleurencombinatie te zien om in te voeren op de Arduino 
 
 
 
-###Test 2
+### Test 2
 
 **Instructie:**
 De gebruiker vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de log-in knop.
@@ -31,7 +31,7 @@ De gebruiker krijgt een melding te zien "Incorrect username or password".
 
 
 
-###Test 3
+### Test 3
 
 **Instructie:**
 De gebruiker vult een correcte gebruikersnaam en een incorrect wachtwoord in, klikt vervolgens op de log-in knop.
@@ -44,9 +44,9 @@ De gebruiker krijgt een melding te zien "Incorrect username or password".
 
 
 
-##Kleuren-verificatie met Arduino
+## Kleuren-verificatie met Arduino
 
-###Test 1
+### Test 1
 
 **Instructie:**
 De gebruiker vult de getoonde kleuren correct in en drukt op de verzendknop.
@@ -58,7 +58,7 @@ De website toont het 'succes' scherm.
 ...
 
 
-###Test 2
+### Test 2
 
 **Instructie:**
 De gebruiker vult de getoonde kleuren verkeerd in en drukt op de verzendknop.
@@ -69,7 +69,7 @@ De website toont een foutmelding 'verkeerde kleurcode'.
 **Daadwerkelijk resultaat:**
 ...
 
-###Test 3
+### Test 3
 
 **Instructie:**
 De gebruiker vult de getoonde kleuren verkeerd in, drukt op de resetknop en vult dan de juiste kleurencombinatie in. 
