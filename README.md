@@ -1,0 +1,17 @@
+# Requirements Milestone 2   
+- Het systeem moet de gebruiker de mogelijkheid hebben zijn/haar gegevens in te kunnen voeren in de frontend.  
+- De backend moet de ingegeven gebruikersgegevens kunnen verifiëren met de gebruikersgegevens in de database.  
+- Na een succesvolle inlogprocedure moet het systeem een TCP connectie kunnen leggen tussen de frontend en de backend.  
+- De backend moet een random kleurencode kunnen genereren.  
+- Het systeem moet de gegenereerde kleurencode toewijzen aan één specifieke sessie.  
+- Het systeem moet de gegenereerde kleurencode die met de Arduino ingevuld dient te worden kunnen tonen in de frontend.  
+- De backend moet een connectie kunnen maken met de zowel de frontend als de Arduino.  
+- De gebruiker moet middels knoppen de kleurencode in kunnen voeren op de Arduino.  
+- De gebruiker moet de Arduino kunnen resetten middels een reset knop.
+- De gebruiker moet de ingegeven kleurencode kunnen versturen middels een verzend knop.  
+- De backend moet de met de Arduino ingegeven kleurencode kunnen verifiëren met de door de backend gegenereerde kleurencode.  
+- Het systeem dient een database te hebben.  
+- De backend dient gegevens die zijn gekoppeld aan gebruikers op te kunnen slaan in de database.  
+- De backend moet gegevens die zijn gekoppeld aan gebruikers op kunnen halen uit de database.  
+- De backend dient na een succesvolle inlogprocedure, de gebruiker de voor hem/haar bestemde informatie toe te wijzen.  
+- De frontend moet de informatie die voor de desbetreffende gebruiker bestemd is te kunnen tonen.  
