@@ -1,7 +1,8 @@
 # User Acceptance Test
-# Second Factor
-# Milestone 2
 
+# Second Factor
+
+# Milestone 2
 
 ## Login met gebruikersnaam en wachtwoord
 
@@ -16,8 +17,6 @@ De gebruiker krijgt een kleurencombinatie te zien om in te voeren op de Arduino 
 **Daadwerkelijk resultaat:**
 ...
 
-
-
 ### Test 2
 
 **Instructie:**
@@ -29,8 +28,6 @@ De gebruiker krijgt een melding te zien "Incorrect username or password".
 **Daadwerkelijk resultaat:**
 ...
 
-
-
 ### Test 3
 
 **Instructie:**
@@ -41,8 +38,6 @@ De gebruiker krijgt een melding te zien "Incorrect username or password".
 
 **Daadwerkelijk resultaat:**
 ...
-
-
 
 ## Kleuren-verificatie met Arduino
 
@@ -57,14 +52,13 @@ De website toont het 'succes' scherm.
 **Daadwerkelijk resultaat:**
 ...
 
-
 ### Test 2
 
 **Instructie:**
 De gebruiker vult de getoonde kleuren verkeerd in en drukt op de verzendknop.
 
 **Verwacht resultaat:**
-De website toont een foutmelding 'verkeerde kleurcode'. 
+De website toont een foutmelding 'verkeerde kleurcode'.
 
 **Daadwerkelijk resultaat:**
 ...
@@ -72,11 +66,46 @@ De website toont een foutmelding 'verkeerde kleurcode'.
 ### Test 3
 
 **Instructie:**
-De gebruiker vult de getoonde kleuren verkeerd in, drukt op de resetknop en vult dan de juiste kleurencombinatie in. 
+De gebruiker vult de getoonde kleuren verkeerd in, drukt op de resetknop en vult dan de juiste kleurencombinatie in.
 Hierna drukt de gebruiker op de verzendknop.
 
 **Verwacht resultaat:**
 De website toont het 'succes' scherm.
+
+**Daadwerkelijk resultaat:**
+...
+
+## Beheerpagina
+
+### Test 1
+
+**Instructie:**
+De beheerder vult gebruikernaam in en wachtwoord.
+
+**Verwacht resultaat:**
+De beheerpagina wordt getoond.
+
+**Daadwerkelijk resultaat:**
+...
+
+### Test 2
+
+**Instructie:**
+De beheerder drukt op de deleteknop naast de gebruiker.
+
+**Verwacht resultaat:**
+De gebruiker woordt verwijderd.
+
+**Daadwerkelijk resultaat:**
+...
+
+### Test 3
+
+**Instructie:**
+De beheerder drukt op de add knop en kan een nieuwe gebruiker toevoegen.
+
+**Verwacht resultaat:**
+Een nieuwe gebruiker wordt in de lijst geplaatst.
 
 **Daadwerkelijk resultaat:**
 ...
