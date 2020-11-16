@@ -11,6 +11,7 @@
 - De website geeft een foutmelding als de gebruikersnaam of wachtwoord niet juist zijn
 - Na het juist inloggen verschijnt een tweede scherm voor het valideren van de 2fa
 - De website bevat een beheerderspagina waarop ingelogde personen zichtbaar zijn
+- De beheerpagina kan gebruikers verwijderen en teovoegen
 
 ### Backend
 
