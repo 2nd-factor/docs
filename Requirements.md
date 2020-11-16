@@ -1,53 +1,50 @@
 # Requirements Second Factor
+
 # Milestone 2
 
-## Front-end
+## Functional requirements
 
-**Must have**
+### Website
 
-* Er is een invulveld voor een gebruikersnaam.
-* Er is een invulveld voor een wachtwoord.
-* Er is een log-in button om de ingevulde velden te versturen.
-* Na een correcte log-in wordt een TCP-connectie met de back-end gemaakt.
-* Na een correcte log-in wordt de kleuren-combinatie vanuit de backend op de website getoond.
-* Na een correct ingevulde kleurencombinatie op de Arduino, wordt een 'succes' scherm getoond. (?)
+- De website heeft een gebruikersnaamveld en een wachtwoord veld
+- De website heeft een inlog knop die de gebruiker moet indrukken op de ingevoerde gegevens te valideren
+- De website geeft een foutmelding als de gebruikersnaam of wachtwoord niet juist zijn
+- Na het juist inloggen verschijnt een tweede scherm voor het valideren van de 2fa
+- De website bevat een beheerderspagina waarop ingelogde personen zichtbaar zijn
+- De beheerpagina kan gebruikers verwijderen en teovoegen
 
-**Should have**
+### Backend
 
-* Na een correcte log-in met admin-gegevens wordt een beheerderspagina getoond met extra informatie zoals ingelogde gebruikers, timestamps, etc.
+- De backend valideert alle ingevoerde inloggegevens
+- Na het inloggen wordt het tijdstip gelogd
+- Voor het inloggen wordt een TCP connectie gebruikt
+- De backend maakt tijdens het opstarten een TCP connectie met de arduino
+- De backend heeft een database
+- Berichten vanuit de arduino worden opgeslagen met een timestamp
+- De backend genereert na het inloggen een 2fa kleurcombinatie en verstuurt deze naar de website
+- De backend verifieert de aangemaakte kleurcombinatie met het bericht vanuit de arduino
 
+### Arduino
 
-## Back-end 
+- Arduino maakt en behoudt een tcp verbinding met de backend
+- De gebruiker kan kleurcombinaties invoeren in de arduino
+- De gebruiker kan de ingevoerde kleuren-input versturen met een verzend knop.
+- De gebruiker kan de ingevoerde kleuren-input wissen met een reset knop.
 
-**Must have**
+## Non-Funtional requirements
 
-* Er wordt een socket-connectie opgezet naar de Arduino.
-* Er wordt een TCP-connectie opgezet met de front-end.
-* Er is een database waar gebruikers-gegevens worden opgeslagen.
-* Er is een database die Arduino berichten opslaat met een timestamp.
-* Er is een functie die ingevulde gebruikers-gegevens controleert op juistheid in de database.
-* Er is een functie die op basis van een correcte log-in een willekeurige kleurencombinatie aanmaakt en naar de frontend verstuurt.
-* De aangemaakte kleurencombinatie wordt in de database opgeslagen bij de gebruikersinfo. 
-* Er is een functie die de input van de Arduino kan interpreteren en vergelijken met de opgeslagen velden in de database.
+### Website
 
-**Could have**
+- Gebruikers moeten het wachtwoord wijzigen na het eerste keer inloggen
+- De website moet mobile vriendelijk zijn
 
-* Er kunnen combinaties van kleuren aan een log-in gekoppeld worden. 
+### Backend
 
+- De backend moet verschillende gebruikers gelijktijdig kunnen afhandelen
+- De kleurcombinatie wordt na 30 seconden gereset
+- De backend moet met meerdere arduinos kunnen verbinden en de verschillende berichten kunnen afhandelen
+- Na 10 foute inlogpogingen wordt het account geblokkeerd
 
-## Arduino
+### Arduino
 
-**Must have**
-
-* De Arduino maakt verbinding met de back-end.
-* De gebruiker kan kleuren-input invoeren door op bijpassende knoppen te drukken.
-* De gebruiker kan de ingevoerde kleuren-input versturen met een verzend knop.
-* De gebruiker kan de ingevoerde kleuren-input wissen met een reset knop.
-
-**Should have**
-
-* De Arduino heeft een display die laat zien welke kleuren er door de gebruiker zijn ingevoerd.
-
-**Could have**
-
-* De gebruiker kan combinaties van kleuren invoeren.
+- Indien er een fout optreed bij de arduino dan wordt dit aan de gebruiker gemeld(lampje)
