@@ -1,4 +1,4 @@
-## Contaxt analyse
+## Context analyse
 
 # Beschrijving ontwerp
 
