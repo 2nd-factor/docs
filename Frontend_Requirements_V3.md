@@ -3,7 +3,7 @@
 - De inlogpagina dient twee invulvelden te hebben voor de gebruikersnaam en het gebruikerswachtwoord, zodat de gebruiker zijn/haar gebruikersgegevens in  kan voeren.
 - De inlogpagina moet een knop 'Inloggen' tonen waarmee de gebruiker na het invoeren van zijn/haar gegevens, de ingevoerde gegevens kan verzenden naar de backend. (Als de gegevens verzonden zijn, worden de invulvelden geleegd).
 - De inlogpagina dient een foutmelding te tonen wanneer de door de gebruiker ingevoerde gegevens niet overeenkomen met de gegevens in de backend.
-- De inlogpagina dient een boodschap "Something went wrong, try again" te tonen wanneer de door de gebruiker ingevoerde gegevens niet overeenkomen met de gegevens in de backend.
+- De inlogpagina dient een boodschap "Something went wrong, try again" te tonen wanneer de door de gebruiker ingevoerde gegevens niet overeenkomen met de gegevens in de backend en vervolgens de gebruiker de kans te geven om alsnog de correcte gegevens in te voeren.
 - De inlogpagina dient de gebruiker na het uitvoeren van een succesvolle inlog-procedure een tweede scherm te tonen waar een door de backend gegenereerde kleurencode wordt getoond.
 - De frontend dient nadat de gebruiker de door de backend genereerde kleurencode heeft ingevoerd op de Arduino, en deze door de backend is goed bevonden, via de pagina met de gegenereerde kleurencode de gebruiker toegang te verschaffen tot de website. En de gebruiker een pagina te tonen met de informatie waar de gebruiker in kwestie recht op heeft.
 - De frontend dient een normale gebruiker na het afronden van een succesvolle tweestaps-authenticatie procedure, een pagina voor normale gebruikers te tonen. (normale gebruiker content)
