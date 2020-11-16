@@ -94,7 +94,7 @@ De beheerpagina wordt getoond.
 De beheerder drukt op de deleteknop naast de gebruiker.
 
 **Verwacht resultaat:**
-De gebruiker woordt verwijderd.
+De gebruiker wordt verwijderd.
 
 **Daadwerkelijk resultaat:**
 ...
