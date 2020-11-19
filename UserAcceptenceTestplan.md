@@ -210,6 +210,7 @@ De gebruikerspagina wordt getoond met een welkomsboodschap. Hier staat de bijbeh
 ### Test 2
 
 **Instructie:**
+De gebruiker logt correct in zoals Test 1.
 De gebruiker navigeert op hun gebruikerspagina naar de knop 'Uitloggen' en klikt hier op.
 
 **Verwacht resultaat:**
@@ -240,6 +241,7 @@ Hier staat de accountinfo van de beheerder en worden beheerdersknoppen getoond o
 ### Test 2
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Toon gebruikers'.
 
 **Verwacht resultaat:**
@@ -252,6 +254,7 @@ Er wordt een lijst met geregistreerde gebruikers getoond.
 ### Test 3
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Gebruiker toevoegen'.
 
 **Verwacht resultaat:**
@@ -264,6 +267,7 @@ Er worden een aantal velden getoond om een gebruiker toe te voegen aan de databa
 ### Test 4
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Gebruiker toevoegen' en vult bij 'e-mail adres' *2fa@fontys.nl* in en bij 'wachtwoord' *testwachtwoord* in. Hierna klikt de beheerder op 'opslaan' en klikt daarna op de 'Toon gebruikers' knop.
 
 **Verwacht resultaat:**
@@ -276,6 +280,7 @@ In de lijst met geregistreerde gebruikers staat 2fa@fontys.nl er nu ook tussen.
 ### Test 5
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Gebruiker toevoegen' en vult bij 'e-mail adres' *2fa@fontys.nl* in maar laat het veld 'wachtwoord' leeg. Hierna klikt de beheerder op 'opslaan'.
 
 **Verwacht resultaat:**
@@ -288,6 +293,7 @@ Er komt een foutmelding in beeld 'Vul een geldig e-mail adres en/of wachtwoord i
 ### Test 6
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Gebruiker toevoegen' en laat het veld 'e-mail adres' leeg maar vult in het veld 'wachtwoord' *testwachtwoord* in. Hierna klikt de beheerder op 'opslaan'.
 
 **Verwacht resultaat:**
@@ -300,6 +306,7 @@ Er komt een foutmelding in beeld 'Vul een geldig e-mail adres en/of wachtwoord i
 ### Test 7
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Gebruiker verwijderen'.
 
 **Verwacht resultaat:**
@@ -312,6 +319,7 @@ Er wordt een zelfde lijst als bij Test 2 getoond. Hier kan de beheerder een of m
 ### Test 8
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder klikt op 'Gebruiker verwijderen' en selecteert gebruiker *2fa@fontys.nl* Hierna klikt de beheerder op 'verwijderen' en klikt daarna op de 'Toon gebruikers' knop.
 
 **Verwacht resultaat:**
@@ -325,6 +333,7 @@ In de lijst met geregistreerde gebruikers staat 2fa@fontys.nl er nu niet meer tu
 ### Test 9 
 
 **Instructie:**
+De beheerder logt correct in zoals Test 1. 
 De beheerder navigeert op hun gebruikerspagina naar de knop 'Uitloggen' en klikt hier op.
 
 **Verwacht resultaat:**
