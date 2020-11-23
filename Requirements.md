@@ -63,10 +63,11 @@
 
 ### Arduino
 
-- Arduino maakt en behoudt een TCP verbinding met de backend
-- De gebruiker kan kleurcombinaties invoeren in de Arduino
-- De gebruiker kan de ingevoerde kleuren-input versturen met een verzend-knop.
-- De gebruiker kan de ingevoerde kleuren-input wissen met een reset-knop.
+- Arduino maakt en behoudt een verbinding met de backend
+- Zolang er connectie is met de backend zal er een led lampje branden.
+- De gebruiker kan doormiddel van meedere knoppen een kleurcombinaties opstellen in de Arduino
+- De gebruiker kan de ingevoerde kleurcombinaties versturen met een verzend-knop.
+- De gebruiker kan de ingevoerde kleurcombinaties wissen met een reset-knop.
 
 ## Non-Funtional requirements
 
