@@ -6,12 +6,12 @@
 
 ## Login met gebruikersnaam en wachtwoord
 
-_Hiermee testen we de requirements van: in te vullen velden bij 'e-mailadres' en 'wachtwoord', het verzenden van inloggegevens met een 'Inloggen' knop, het tonen van een boodschap bij invoer van foutieve gegevens (op diverse manieren), het tonen van een kleurencode bij correcte login_
+_Hiermee testen we de requirements van: in te vullen velden bij 'gebruikersnaam' en 'wachtwoord', het verzenden van inloggegevens met een 'Inloggen' knop, het tonen van een boodschap bij invoer van foutieve gegevens (op diverse manieren), het tonen van een kleurencode bij correcte login_
 
 ### Test 1
 
 **Instructie:**
-De gebruiker vult een correct e-mailadres en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult een correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
 De gebruiker krijgt een kleurencode te zien die hij/zij dient in te voeren op de Arduino.
@@ -22,7 +22,7 @@ De gebruiker krijgt een kleurencode te zien die hij/zij dient in te voeren op de
 ### Test 2
 
 **Instructie:**
-De beheerder vult een correct e-mailadres en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De beheerder vult een correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
 De beheerder krijgt een kleurencode te zien die hij/zij dient in te voeren op de Arduino.
@@ -33,10 +33,10 @@ De beheerder krijgt een kleurencode te zien die hij/zij dient in te voeren op de
 ### Test 3
 
 **Instructie:**
-De gebruiker vult een incorrect e-mailadres en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -44,10 +44,10 @@ De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 ### Test 4
 
 **Instructie:**
-De beheerder vult een incorrect e-mailadres en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De beheerder vult een incorrecte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De beheerder krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De beheerder krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -55,10 +55,10 @@ De beheerder krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 ### Test 5
 
 **Instructie:**
-De gebruiker vult een correct e-mailadres en een incorrect wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult een correcte gebruikersnaam en een incorrect wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -66,10 +66,10 @@ De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 ### Test 6
 
 **Instructie:**
-De beheerder vult een correct e-mailadres en een incorrect wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De beheerder vult een correcte gebruikersnaam en een incorrect wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De beheerder krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De beheerder krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -77,10 +77,10 @@ De beheerder krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 ### Test 7
 
 **Instructie:**
-De gebruiker vult een incorrect e-mailadres en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -88,10 +88,10 @@ De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 ### Test 8
 
 **Instructie:**
-De beheerder vult een incorrect e-mailadres en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De beheerder vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -99,10 +99,10 @@ De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 ### Test 9
 
 **Instructie:**
-De gebruiker of beheerder vult alleen een e-mailadres in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker of beheerder vult alleen een gebruikersnaam in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -113,7 +113,7 @@ De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
 De gebruiker of beheerder vult alleen een wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrect e-mailadres of wachtwoord".
+De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
 
 **Daadwerkelijk resultaat:**
 ...
@@ -125,7 +125,7 @@ _Hiermee testen we de requirements van: een kleurencode die maximaal 30 seconden
 ### Test 1
 
 **Instructie:**
-De gebruiker of beheerder vult het correcte e-mailadres en wachtwoord in, klikt vervolgens op de 'Inloggen' knop. Ze wachten 30 seconden zonder iets in te vullen op de Arduino.
+De gebruiker of beheerder vult de correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop. Ze wachten 30 seconden zonder iets in te vullen op de Arduino.
 
 **Verwacht resultaat:**
 De website ververst en toont een nieuw gegenereerde kleurencode.
@@ -185,7 +185,7 @@ _Hiermee testen we de requirements van: het tonen van de accountinfo van de gebr
 ### Test 1
 
 **Instructie:**
-De gebruiker logt correct in met e-mailadres en wachtwoord en vervolgens met de juiste kleurencode op de Arduino.
+De gebruiker logt correct in met gebruikersnaam en wachtwoord en vervolgens met de juiste kleurencode op de Arduino.
 
 **Verwacht resultaat:**
 De gebruikerspagina wordt getoond met een welkomstboodschap. Hier staat de bijbehorende accountinfo vermeld.(?)
@@ -200,7 +200,7 @@ De gebruiker logt correct in zoals Test 1.
 De gebruiker navigeert op hun gebruikerspagina naar de knop 'Uitloggen' en klikt hier op.
 
 **Verwacht resultaat:**
-De inlogpagina voor e-mailadres en wachtwoord wordt getoond met lege velden.
+De inlogpagina voor gebruikersnaam en wachtwoord wordt getoond met lege velden.
 
 **Daadwerkelijk resultaat:**
 ...
@@ -212,7 +212,7 @@ _Hiermee testen we de requirements van: het tonen van de accountinfo van de behe
 ### Test 1
 
 **Instructie:**
-De beheerder logt correct in met e-mailadres en wachtwoord en vervolgens met de juiste kleurencode op de Arduino.
+De beheerder logt correct in met gebruikersnaam en wachtwoord en vervolgens met de juiste kleurencode op de Arduino.
 
 **Verwacht resultaat:**
 De beheerpagina wordt getoond met een welkomstboodschap.
@@ -240,7 +240,7 @@ De beheerder logt correct in zoals Test 1.
 De beheerder klikt op de 'Gebruiker toevoegen' knop.
 
 **Verwacht resultaat:**
-Er worden een aantal velden getoond om een gebruiker toe te voegen aan de database ('e-mailadres', 'wachtwoord')
+Er worden een aantal velden getoond om een gebruiker toe te voegen aan de database ('gebruikersnaam', 'wachtwoord')
 
 **Daadwerkelijk resultaat:**
 ...
@@ -249,10 +249,10 @@ Er worden een aantal velden getoond om een gebruiker toe te voegen aan de databa
 
 **Instructie:**
 De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop en vult bij 'e-mailadres' *2fa@fontys.nl* in en bij 'wachtwoord' _testwachtwoord_ in. Hierna klikt de beheerder op de 'Opslaan' knop en klikt daarna op de 'Toon gebruikers' knop.
+De beheerder klikt op de 'Gebruiker toevoegen' knop en vult bij 'gebruikersnaam' _Henk666_ in en bij 'wachtwoord' _testwachtwoord_ in. Hierna klikt de beheerder op de 'Opslaan' knop en klikt daarna op de 'Toon gebruikers' knop.
 
 **Verwacht resultaat:**
-In de lijst met geregistreerde gebruikers staat 2fa@fontys.nl er nu ook tussen.
+In de lijst met geregistreerde gebruikers staat Henk666 er nu ook tussen.
 
 **Daadwerkelijk resultaat:**
 ...
@@ -261,10 +261,10 @@ In de lijst met geregistreerde gebruikers staat 2fa@fontys.nl er nu ook tussen.
 
 **Instructie:**
 De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop en vult bij 'e-mailadres' *2fa@fontys.nl* in maar laat het veld 'wachtwoord' leeg. Hierna klikt de beheerder op de 'Opslaan' knop.
+De beheerder klikt op de 'Gebruiker toevoegen' knop en vult bij 'gebruikersnaam' _Henk666_ in maar laat het veld 'wachtwoord' leeg. Hierna klikt de beheerder op de 'Opslaan' knop.
 
 **Verwacht resultaat:**
-Er komt een foutmelding in beeld 'Vul een geldig e-mailadres en/of wachtwoord in'
+Er komt een foutmelding in beeld 'Vul een geldige gebruikersnaam en/of wachtwoord in'
 
 **Daadwerkelijk resultaat:**
 ...
@@ -273,10 +273,10 @@ Er komt een foutmelding in beeld 'Vul een geldig e-mailadres en/of wachtwoord in
 
 **Instructie:**
 De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop en laat het veld 'e-mailadres' leeg maar vult in het veld 'wachtwoord' _testwachtwoord_ in. Hierna klikt de beheerder op de 'opslaan' knop.
+De beheerder klikt op de 'Gebruiker toevoegen' knop en laat het veld 'gebruikersnaam' leeg maar vult in het veld 'wachtwoord' _testwachtwoord_ in. Hierna klikt de beheerder op de 'opslaan' knop.
 
 **Verwacht resultaat:**
-Er komt een foutmelding in beeld 'Vul een geldig e-mailadres en/of wachtwoord in'
+Er komt een foutmelding in beeld 'Vul een geldig gebruikersnaam en/of wachtwoord in'
 
 **Daadwerkelijk resultaat:**
 ...
@@ -297,10 +297,10 @@ Er wordt een zelfde lijst als bij Test 2 getoond. Hier kan de beheerder een of m
 
 **Instructie:**
 De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker verwijderen' knop en selecteert gebruiker *2fa@fontys.nl* Hierna klikt de beheerder op de 'verwijderen' knop en klikt daarna op de 'Toon gebruikers' knop.
+De beheerder klikt op de 'Gebruiker verwijderen' knop en selecteert gebruiker _Henk666_ Hierna klikt de beheerder op de 'verwijderen' knop en klikt daarna op de 'Toon gebruikers' knop.
 
 **Verwacht resultaat:**
-In de lijst met geregistreerde gebruikers staat 2fa@fontys.nl er nu niet meer tussen.
+In de lijst met geregistreerde gebruikers staat Henk666 er nu niet meer tussen.
 
 **Daadwerkelijk resultaat:**
 ...
