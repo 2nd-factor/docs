@@ -9,14 +9,14 @@
 # Frontend (Website)
 
 - De website heeft een knop 'genereer code'.
-- Na het klikken op de 'genereer code'-knop zal een tweede scherm laden, waar een door de backend gegenereerde kleurencode wordt getoond.
+- Na het klikken op de 'genereer code'-knop zal een tweede scherm laden, waar een door de backend gegenereerde kleurencode wordt getoond. 
+- Na het klikken op de 'genereer code'-knop zal deze knop niet meer zichtbaar zijn. Er zal hiervoor in de plaats een 'verifieer'-knop getoond worden. 
+- Na het klikken op de 'verifieer'-knop, wordt door de backend gecontroleerd of de ingevoerde kleurencode vanuit de Arduino, overeen komt met de gegenereerde code die ook op de website wordt getoond.
 - De door de backend gegenereerde kleurencode dient maximaal 30 seconden op de frontend te zien te zijn. Dit wordt bijgehouden door een timer die terug zal tellen van 30 naar 0. 
-- Als de juiste code niet binnen 30 seconden wordt ingevoerd, dan verschijnt de 'genereer code'-knop weer in beeld.
-
-- De frontend dient nadat de gebruiker de door de backend genereerde kleurencode heeft ingevoerd op de Arduino, en deze door de backend is goed bevonden, via de pagina met de gegenereerde kleurencode een succes bericht te tonen.
-
-
-
+- Als de (juiste) code niet binnen 30 seconden wordt ingevoerd, dan verdwijnt de kleurencode.
+- Als de (juiste) code niet binnen 30 seconden wordt ingevoerd, dan verschijnt de 'genereer code'-knop weer in beeld.
+- De frontend dient nadat de gebruiker de door de backend genereerde kleurencode heeft ingevoerd op de Arduino, en deze door de backend is goed bevonden, via de pagina met de gegenereerde kleurencode een 'succes' bericht te tonen.
+- De frontend dient nadat de gebruiker de door de backend genereerde kleurencode heeft ingevoerd op de Arduino, en deze door de backend niet goed is bevonden, via de pagina met de gegenereerde kleurencode een 'fout' bericht te tonen.
 
 ### Backend
 

@@ -4,72 +4,79 @@
 
 # Milestone 2
 
-## Login met gebruikersnaam en wachtwoord
+#
 
-_Hiermee testen we de requirements van: in te vullen velden bij 'gebruikersnaam' en 'wachtwoord', het verzenden van inloggegevens met een 'Inloggen' knop, het tonen van een boodschap bij invoer van foutieve gegevens (op diverse manieren), het tonen van een kleurencode bij correcte login_
+## User acceptance testen op interactie met 2FA
+_Hiermee testen we de requirements van: Er wordt een een bevestiging van actieve verbinding getoond, er is een manier om een kleurencode in te geven, te versturen en te wissen.
 
 ### Test 1
 
 **Instructie:**
-De gebruiker vult een correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker plugt de 2FA in wanneer de server actief is. 
 
 **Verwacht resultaat:**
-De gebruiker krijgt een kleurencode te zien die hij/zij dient in te voeren op de Arduino.
+Zodra de 2FA is ingeschakeld, wordt met een brandend ledje bevestigd dat er een actieve verbinding is. 
 
 **Daadwerkelijk resultaat:**
 ...
+
 
 ### Test 2
 
 **Instructie:**
-De beheerder vult een correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker schakelt de 2FA in wanneer de server inactief is.
 
 **Verwacht resultaat:**
-De beheerder krijgt een kleurencode te zien die hij/zij dient in te voeren op de Arduino.
+Zodra de 2FA is ingeschakeld, blijft het ledje uit om te bevestigen dat er geen actieve verbinding is. 
 
 **Daadwerkelijk resultaat:**
 ...
+
 
 ### Test 3
 
 **Instructie:**
-De gebruiker vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult drie keer de kleur blauw in bij de 2FA door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
+Deze invoer wordt met drie blauwe, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
 ...
+
+
 
 ### Test 4
 
 **Instructie:**
-De beheerder vult een incorrecte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult drie keer de kleur rood in bij de 2FA door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
-De beheerder krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
+Deze invoer wordt met drie rode, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
 ...
+
 
 ### Test 5
 
 **Instructie:**
-De gebruiker vult een correcte gebruikersnaam en een incorrect wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult drie keer de kleur groen in bij de 2FA door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
+Deze invoer wordt met drie groen, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
 ...
 
+
 ### Test 6
 
 **Instructie:**
-De beheerder vult een correcte gebruikersnaam en een incorrect wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult de kleuren groen, rood en blauw ieder 1x in bij de 2FA door het indrukken van de corresponderende knoppen. 
 
 **Verwacht resultaat:**
-De beheerder krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
+Deze invoer wordt met een groene, een rode en een blauwe brandende (RGB)-led bevestigd.
 
 **Daadwerkelijk resultaat:**
 ...
@@ -77,58 +84,29 @@ De beheerder krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord
 ### Test 7
 
 **Instructie:**
-De gebruiker vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
+De gebruiker vult drie keer de kleur groen in bij de 2FA door het indrukken van de corresponderende knop. 
+Hierna drukt de gebruiker op de reset knop en vult drie keer de kleur rood in bij de 2FA door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
+Na het invullen van de eerste reeks, worden de (RGB)-leds groen. Na het indrukken van de reset-knop gaan de (RGB)-leds allemaal uit en na het invullen van de tweede reeks, worden de (RGB)-leds rood.
 
 **Daadwerkelijk resultaat:**
 ...
 
-### Test 8
 
-**Instructie:**
-De beheerder vult een incorrecte gebruikersnaam en een correct wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
-
-**Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 9
-
-**Instructie:**
-De gebruiker of beheerder vult alleen een gebruikersnaam in, klikt vervolgens op de 'Inloggen' knop.
-
-**Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 10
-
-**Instructie:**
-De gebruiker of beheerder vult alleen een wachtwoord in, klikt vervolgens op de 'Inloggen' knop.
-
-**Verwacht resultaat:**
-De gebruiker krijgt een melding te zien "Incorrecte gebruikersnaam of wachtwoord".
-
-**Daadwerkelijk resultaat:**
-...
-
-## Kleuren verificatie na succesvolle inlog-procedure met gebruiker info
-
-_Hiermee testen we de requirements van: een kleurencode die maximaal 30 seconden geldig is, de welkomstboodschap op gebruikers- en beheerderspagina's, verificatie van kleurencode in de backend, het invoeren van de kleurencode op de Arduino, gebruik van de knoppen op de Arduino (kleuren, verzendknop, resetknop)._
+## User acceptance tests op front-end
+_Hiermee testen we de requirements van: Er is een 'genereer code'-knop op de frontend, wanneer deze ingedrukt wordt, toont de frontend een kleurencode van 3 (verschillende) kleuren.
 
 ### Test 1
 
 **Instructie:**
-De gebruiker of beheerder vult de correcte gebruikersnaam en wachtwoord in, klikt vervolgens op de 'Inloggen' knop. Ze wachten 30 seconden zonder iets in te vullen op de Arduino.
+De gebruiker klikt op de knop 'genereer code'. 
 
 **Verwacht resultaat:**
-De website ververst en toont een nieuw gegenereerde kleurencode.
+De 'genereer code'-knop verdwijnt van de pagina en wordt vervangen door de 'verifieer'-knop.
+Daarbij wordt ook een kleurencode getoond van 3 (verschillende) kleuren. 
+Er komt tegelijk met de kleurencode een timer in beeld die de geldige 30 seconden aftelt.
+
 
 **Daadwerkelijk resultaat:**
 ...
@@ -136,183 +114,40 @@ De website ververst en toont een nieuw gegenereerde kleurencode.
 ### Test 2
 
 **Instructie:**
-De gebruiker vult na inloggen de getoonde kleuren correct in op de Arduino en drukt op de verzendknop.
+De gebruiker klikt op de knop 'genereer code' en wacht 30 seconden zonder iets in te voeren.
 
 **Verwacht resultaat:**
-De website toont de gebruikerspagina met een welkomstboodschap.
+De 'genereer code'-knop verdwijnt van de pagina en wordt vervangen door de 'verifieer'-knop.
+Daarbij wordt ook een kleurencode getoond van 3 (verschillende) kleuren.  
+Er komt tegelijk met de kleurencode een timer in beeld die de geldige 30 seconden aftelt.
+Nadat de timer 0 seconden heeft bereikt, verschijnt de 'genereer-code'-knop weer in beeld en zowel de 'verifieer'-knop en de vervallen code verdwijnen van de pagina.
 
 **Daadwerkelijk resultaat:**
 ...
 
-## Test 3
-
-**Instructie:**
-De beheerder vult na inloggen de getoonde kleuren correct in op de Arduino en drukt op de verzendknop.
-
-**Verwacht resultaat:**
-De website toont de beheerderspagina met een welkomstboodschap.
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 4
-
-**Instructie:**
-De gebruiker vult de getoonde kleuren verkeerd in op de Arduino en drukt op de verzendknop.
-
-**Verwacht resultaat:**
-De website toont een foutmelding 'Verkeerde kleurencode' en toont een nieuw gegenereerde kleurencode.
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 5
-
-**Instructie:**
-De gebruiker vult de getoonde kleuren verkeerd in op de Arduino, drukt op de resetknop en vult daarna de juiste kleurencode in.
-Hierna drukt de gebruiker op de verzendknop.
-
-**Verwacht resultaat:**
-De website toont de gebruikerspagina met een welkomstboodschap.
-
-**Daadwerkelijk resultaat:**
-...
-
-## Gebruikerspagina
-
-_Hiermee testen we de requirements van: het tonen van de accountinfo van de gebruiker, de 'Uitloggen' knop_
-
-### Test 1
-
-**Instructie:**
-De gebruiker logt correct in met gebruikersnaam en wachtwoord en vervolgens met de juiste kleurencode op de Arduino.
-
-**Verwacht resultaat:**
-De gebruikerspagina wordt getoond met een welkomstboodschap. Hier staat de bijbehorende accountinfo vermeld.(?)
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 2
-
-**Instructie:**
-De gebruiker logt correct in zoals Test 1.
-De gebruiker navigeert op hun gebruikerspagina naar de knop 'Uitloggen' en klikt hier op.
-
-**Verwacht resultaat:**
-De inlogpagina voor gebruikersnaam en wachtwoord wordt getoond met lege velden.
-
-**Daadwerkelijk resultaat:**
-...
-
-## Beheerpagina
-
-_Hiermee testen we de requirements van: het tonen van de accountinfo van de beheerder, de 'Uitloggen' knop, het tonen van de geregistreerde gebruikers, het toevoegen/verwijderen van gebruikers_
-
-### Test 1
-
-**Instructie:**
-De beheerder logt correct in met gebruikersnaam en wachtwoord en vervolgens met de juiste kleurencode op de Arduino.
-
-**Verwacht resultaat:**
-De beheerpagina wordt getoond met een welkomstboodschap.
-Hier staat de accountinfo van de beheerder en worden beheerdersknoppen getoond om accounts te beheren ('Toon gebruikers', 'Gebruiker toevoegen', 'Gebruiker verwijderen', 'Opslaan')
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 2
-
-**Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Toon gebruikers' knop.
-
-**Verwacht resultaat:**
-Er wordt een lijst met geregistreerde gebruikers getoond.
-
-**Daadwerkelijk resultaat:**
-...
 
 ### Test 3
-
 **Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop.
+De gebruiker klikt op de knop 'genereer code', leest de kleurencode van de pagina en vult deze in op de 2FA door middel van de corresponderende knoppen. 
+Nadat de gebruiker de, op de website afgebeelde code heeft ingevoerd, drukt hij op de verzendknop op de 2FA.
+Hierna drukt hij op de 'verifieer'-knop op de website. 
 
 **Verwacht resultaat:**
-Er worden een aantal velden getoond om een gebruiker toe te voegen aan de database ('gebruikersnaam', 'wachtwoord')
+Er verschijnt er een 'succes' bericht op de website.
 
 **Daadwerkelijk resultaat:**
 ...
 
 ### Test 4
-
 **Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop en vult bij 'gebruikersnaam' _Henk666_ in en bij 'wachtwoord' _testwachtwoord_ in. Hierna klikt de beheerder op de 'Opslaan' knop en klikt daarna op de 'Toon gebruikers' knop.
+De gebruiker klikt op de knop 'genereer code', leest de kleurencode van de pagina en vult een andere code in op de 2FA door middel van de corresponderende knoppen. 
+Nadat de gebruiker de, verkeerde code heeft ingevoerd, drukt hij op de verzendknop op de 2FA.
+Hierna drukt hij op de 'verifieer'-knop op de website. 
 
 **Verwacht resultaat:**
-In de lijst met geregistreerde gebruikers staat Henk666 er nu ook tussen.
+Er verschijnt er een 'fout' bericht op de website.
 
 **Daadwerkelijk resultaat:**
 ...
 
-### Test 5
 
-**Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop en vult bij 'gebruikersnaam' _Henk666_ in maar laat het veld 'wachtwoord' leeg. Hierna klikt de beheerder op de 'Opslaan' knop.
-
-**Verwacht resultaat:**
-Er komt een foutmelding in beeld 'Vul een geldige gebruikersnaam en/of wachtwoord in'
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 6
-
-**Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker toevoegen' knop en laat het veld 'gebruikersnaam' leeg maar vult in het veld 'wachtwoord' _testwachtwoord_ in. Hierna klikt de beheerder op de 'opslaan' knop.
-
-**Verwacht resultaat:**
-Er komt een foutmelding in beeld 'Vul een geldig gebruikersnaam en/of wachtwoord in'
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 7
-
-**Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker verwijderen' knop.
-
-**Verwacht resultaat:**
-Er wordt een zelfde lijst als bij Test 2 getoond. Hier kan de beheerder een of meerdere gebruikers selecteren om te verwijderen.
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 8
-
-**Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder klikt op de 'Gebruiker verwijderen' knop en selecteert gebruiker _Henk666_ Hierna klikt de beheerder op de 'verwijderen' knop en klikt daarna op de 'Toon gebruikers' knop.
-
-**Verwacht resultaat:**
-In de lijst met geregistreerde gebruikers staat Henk666 er nu niet meer tussen.
-
-**Daadwerkelijk resultaat:**
-...
-
-### Test 9
-
-**Instructie:**
-De beheerder logt correct in zoals Test 1.
-De beheerder navigeert op hun gebruikerspagina naar de knop 'Uitloggen' en klikt hier op.
-
-**Verwacht resultaat:**
-De inlogpagina voor emailadres en wachtwoord wordt getoond met lege velden.
-
-**Daadwerkelijk resultaat:**
-...
