@@ -32,20 +32,6 @@ Zodra de Arduino is ingeschakeld, blijft het ledje uit om te bevestigen dat er g
 **Daadwerkelijk resultaat:**
 ...
 
-
-### Test AD-colorBlue_00
-
-**Instructie:**
-De gebruiker vult drie keer de kleur blauw in bij de Arduino door het indrukken van de corresponderende knop. 
-
-**Verwacht resultaat:**
-Deze invoer wordt met drie blauwe, brandende (RGB)-leds bevestigd.
-
-**Daadwerkelijk resultaat:**
-...
-
-
-
 ### Test AD-colorRed_00
 
 **Instructie:**
@@ -56,7 +42,6 @@ Deze invoer wordt met drie rode, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
 ...
-
 
 ### Test AD-colorGreen_00
 
@@ -69,6 +54,16 @@ Deze invoer wordt met drie groen, brandende (RGB)-leds bevestigd.
 **Daadwerkelijk resultaat:**
 ...
 
+### Test AD-colorBlue_00
+
+**Instructie:**
+De gebruiker vult drie keer de kleur blauw in bij de Arduino door het indrukken van de corresponderende knop. 
+
+**Verwacht resultaat:**
+Deze invoer wordt met drie blauwe, brandende (RGB)-leds bevestigd.
+
+**Daadwerkelijk resultaat:**
+...
 
 ### Test AD-colorRGB00
 
