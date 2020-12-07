@@ -9,34 +9,34 @@
 ## User acceptance testen op interactie met 2FA
 _Hiermee testen we de requirements van: Er wordt een een bevestiging van actieve verbinding getoond, er is een manier om een kleurencode in te geven, te versturen en te wissen.
 
-### Test 1
+### Test AD-power_01
 
 **Instructie:**
-De gebruiker plugt de 2FA in wanneer de server actief is. 
+De gebruiker plugt de Arduino in wanneer de server actief is. 
 
 **Verwacht resultaat:**
-Zodra de 2FA is ingeschakeld, wordt met een brandend ledje bevestigd dat er een actieve verbinding is. 
+Zodra de Arduino is ingeschakeld, wordt met een brandend ledje bevestigd dat er een actieve verbinding is. 
 
 **Daadwerkelijk resultaat:**
 ...
 
 
-### Test 2
+### Test AD-power_00
 
 **Instructie:**
-De gebruiker schakelt de 2FA in wanneer de server inactief is.
+De gebruiker schakelt de Arduino in wanneer de server inactief is.
 
 **Verwacht resultaat:**
-Zodra de 2FA is ingeschakeld, blijft het ledje uit om te bevestigen dat er geen actieve verbinding is. 
+Zodra de Arduino is ingeschakeld, blijft het ledje uit om te bevestigen dat er geen actieve verbinding is. 
 
 **Daadwerkelijk resultaat:**
 ...
 
 
-### Test 3
+### Test AD-colorBlue_00
 
 **Instructie:**
-De gebruiker vult drie keer de kleur blauw in bij de 2FA door het indrukken van de corresponderende knop. 
+De gebruiker vult drie keer de kleur blauw in bij de Arduino door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
 Deze invoer wordt met drie blauwe, brandende (RGB)-leds bevestigd.
@@ -46,10 +46,10 @@ Deze invoer wordt met drie blauwe, brandende (RGB)-leds bevestigd.
 
 
 
-### Test 4
+### Test AD-colorRed_00
 
 **Instructie:**
-De gebruiker vult drie keer de kleur rood in bij de 2FA door het indrukken van de corresponderende knop. 
+De gebruiker vult drie keer de kleur rood in bij de Arduino door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
 Deze invoer wordt met drie rode, brandende (RGB)-leds bevestigd.
@@ -58,10 +58,10 @@ Deze invoer wordt met drie rode, brandende (RGB)-leds bevestigd.
 ...
 
 
-### Test 5
+### Test AD-colorGreen_00
 
 **Instructie:**
-De gebruiker vult drie keer de kleur groen in bij de 2FA door het indrukken van de corresponderende knop. 
+De gebruiker vult drie keer de kleur groen in bij de Arduino door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
 Deze invoer wordt met drie groen, brandende (RGB)-leds bevestigd.
@@ -70,22 +70,22 @@ Deze invoer wordt met drie groen, brandende (RGB)-leds bevestigd.
 ...
 
 
-### Test 6
+### Test AD-colorRGB00
 
 **Instructie:**
-De gebruiker vult de kleuren groen, rood en blauw ieder 1x in bij de 2FA door het indrukken van de corresponderende knoppen. 
+De gebruiker vult de kleuren rood, groen en blauw ieder 1x in bij de Arduino door het indrukken van de corresponderende knoppen. 
 
 **Verwacht resultaat:**
-Deze invoer wordt met een groene, een rode en een blauwe brandende (RGB)-led bevestigd.
+Deze invoer wordt met een rood, een groen en een blauwe brandende (RGB)-led bevestigd.
 
 **Daadwerkelijk resultaat:**
 ...
 
-### Test 7
+### Test AD-reset_00
 
 **Instructie:**
-De gebruiker vult drie keer de kleur groen in bij de 2FA door het indrukken van de corresponderende knop. 
-Hierna drukt de gebruiker op de reset knop en vult drie keer de kleur rood in bij de 2FA door het indrukken van de corresponderende knop. 
+De gebruiker vult drie keer de kleur groen in bij de Arduino door het indrukken van de corresponderende knop. 
+Hierna drukt de gebruiker op de reset knop en vult drie keer de kleur rood in bij de Arduino door het indrukken van de corresponderende knop. 
 
 **Verwacht resultaat:**
 Na het invullen van de eerste reeks, worden de (RGB)-leds groen. Na het indrukken van de reset-knop gaan de (RGB)-leds allemaal uit en na het invullen van de tweede reeks, worden de (RGB)-leds rood.
@@ -97,7 +97,7 @@ Na het invullen van de eerste reeks, worden de (RGB)-leds groen. Na het indrukke
 ## User acceptance tests op front-end
 _Hiermee testen we de requirements van: Er is een 'genereer code'-knop op de frontend, wanneer deze ingedrukt wordt, toont de frontend een kleurencode van 3 (verschillende) kleuren.
 
-### Test 1
+### Test FE-generate_00
 
 **Instructie:**
 De gebruiker klikt op de knop 'genereer code'. 
@@ -111,7 +111,7 @@ Er komt tegelijk met de kleurencode een timer in beeld die de geldige 30 seconde
 **Daadwerkelijk resultaat:**
 ...
 
-### Test 2
+### Test FE-generate_01
 
 **Instructie:**
 De gebruiker klikt op de knop 'genereer code' en wacht 30 seconden zonder iets in te voeren.
@@ -126,7 +126,7 @@ Nadat de timer 0 seconden heeft bereikt, verschijnt de 'genereer-code'-knop weer
 ...
 
 
-### Test 3
+### Test FE-genVer_00
 **Instructie:**
 De gebruiker klikt op de knop 'genereer code', leest de kleurencode van de pagina en vult deze in op de 2FA door middel van de corresponderende knoppen. 
 Nadat de gebruiker de, op de website afgebeelde code heeft ingevoerd, drukt hij op de verzendknop op de 2FA.
@@ -138,7 +138,7 @@ Er verschijnt er een 'succes' bericht op de website.
 **Daadwerkelijk resultaat:**
 ...
 
-### Test 4
+### Test FE-genVer_01
 **Instructie:**
 De gebruiker klikt op de knop 'genereer code', leest de kleurencode van de pagina en vult een andere code in op de 2FA door middel van de corresponderende knoppen. 
 Nadat de gebruiker de, verkeerde code heeft ingevoerd, drukt hij op de verzendknop op de 2FA.
