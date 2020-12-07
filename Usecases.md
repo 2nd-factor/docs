@@ -5,39 +5,12 @@
 - Naam : Inloggen
 - Doel : Gebruikers laten inloggen middels een 2FA
 - Actoren : Gebruikers
-- Aannames :
-- Beschrijving:
+- Aannames : De gebruiker is nog niet ingelogd middels 2FA.
+- Beschrijving: De gebruiker gaat inloggen d.m.v. 2FA door op de website een code aan te vragen en vervolgens op de arduino deze code in te vullen.
+                Om vervolgens vanuit de website te controleren of de ingevulde code juist ingevuld is.
 - Uitzondering:
-- Resultaat :
+- Resultaat : De gebruiker krijgt een bevestiging dat de code correct is ingevuld.
 
 ### User story
 
-Als gebruiker wil ik middels een 2FA veilig kunnen inloggen
-
-## Usecase beheer
-
-- Naam : Beheer
-- Doel : Het inzien van ingelogde gebruikers
-- Actoren : Beheerder
-- Aannames :
-- Beschrijving:
-- Uitzondering:
-- Resultaat :
-
-### User story
-
-Als beheerder wil ik kunnen zien welke gebruikers zijn ingelogd
-
-## Usecase beheer gebruikers
-
-- Naam : Beheer gebruikers
-- Doel : Aanmaken en verwijderen van gebruikrs
-- Actoren : Beheerder, gebruikers
-- Aannames :
-- Beschrijving:
-- Uitzondering:
-- Resultaat :
-
-### User story
-
-Als beheerder wil ik gebruikers kunnen aanmaken en verwijderen
+Als gebruiker wil ik middels een 2FA systeem veilig kunnen inloggen
