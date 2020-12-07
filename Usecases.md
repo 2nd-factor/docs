@@ -18,7 +18,7 @@ Als gebruiker wil ik middels een 2FA systeem veilig kunnen inloggen
 ## Usecase verificatie
 
 - Naam : verificatie
-- Doel : Het systeem controleert of de ingvulde code matched met de verwachte code.
+- Doel : Het systeem controleert of de ingevulde code matched met de verwachte code.
 - Actoren : Systeem
 - Aannames : De gebruiker heeft de code goed ontvangen en heeft deze vervolgens correct op de arduino ingevuld.
 - Beschrijving: Het systeem controleert of de ontvangen code overeenkomt met de verzonde gegenereerde code.
@@ -42,4 +42,3 @@ Ik wil dat het systeem controleert of de code die ik heb ingevuld correct is.
 ### User story
 
 Ik wil dat ik iedere keer als ik een code aanvraag een nieuwe random code wordt gegenereerd.
-
