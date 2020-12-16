@@ -1,0 +1,97 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Code generator and verification API",
+    "version" : "1.0.0-oas3",
+    "description" : "Swagger definition for Color-Code API"
+  },
+  "tags" : [ {
+    "name" : "User",
+    "description" : "User wants to authenticate with 2nd-factor module"
+  } ],
+  "paths" : {
+    "/generatecode" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "gets the latest server response.",
+        "description" : "this request will return a generated color-code.",
+        "responses" : {
+          "201" : {
+            "description" : "succesful created",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/definitions/GeneratedCode"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
+    "/verifycode" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "let the server verify sent in code.",
+        "description" : "After a code was sent in by the 2nd-factor module with this request you can compare the generated color-code with the 2nd-factor module one.",
+        "responses" : {
+          "300" : {
+            "description" : "the code you have sent in with the 2nd-factor              module is validated",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/definitions/validationCode"
+                }
+              }
+            }
+          },
+          "406" : {
+            "description" : "the code you sent in with the 2nd-factor module            is not the code that was generated.",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/definitions/validationCode"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "GeneratedCode" : {
+      "type" : "object",
+      "required" : [ "code", "timeLeft" ],
+      "properties" : {
+        "code" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "example" : [ "#FF0000", "#00FF00", "#0000FF" ]
+        },
+        "timeLeft" : {
+          "type" : "string",
+          "format" : "date-time"
+        }
+      }
+    },
+    "validationCode" : {
+      "type" : "string",
+      "required" : [ "message" ],
+      "properties" : {
+        "message" : {
+          "type" : "String",
+          "example" : "Sent in code is correct/false on 15-12-2020 20:42"
+        }
+      }
+    }
+  }
+}
