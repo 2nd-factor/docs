@@ -13,7 +13,7 @@
     "/generatecode" : {
       "get" : {
         "tags" : [ "User" ],
-        "summary" : "gets the latest server respond.",
+        "summary" : "gets the latest server response.",
         "description" : "this request will return a generated color-code.",
         "responses" : {
           "201" : {
@@ -35,11 +35,11 @@
     "/verifycode" : {
       "get" : {
         "tags" : [ "User" ],
-        "summary" : "let the server verify send in code.",
-        "description" : "After a code was send in by the 2nd-factor module with this request you can compare the generated color-code withe the 2nd-factor module one.",
+        "summary" : "let the server verify sent in code.",
+        "description" : "After a code was sent in by the 2nd-factor module with this request you can compare the generated color-code with the 2nd-factor module one.",
         "responses" : {
           "300" : {
-            "description" : "the code you have send in with the 2nd-factor              module is validated",
+            "description" : "the code you have sent in with the 2nd-factor              module is validated",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -49,7 +49,7 @@
             }
           },
           "406" : {
-            "description" : "the code you send in with the 2nd-factor module            is not the code that was generated.",
+            "description" : "the code you sent in with the 2nd-factor module            is not the code that was generated.",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -89,7 +89,7 @@
       "properties" : {
         "message" : {
           "type" : "String",
-          "example" : "Send in code is correct/false on 15-12-2020 20:42"
+          "example" : "Sent in code is correct/false on 15-12-2020 20:42"
         }
       }
     }
