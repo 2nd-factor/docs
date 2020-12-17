@@ -14,7 +14,7 @@ The next layer in the chain is supposed to give more information to the abstract
 	Als eerste heb je de Frontend-Server container waar de website opdraait.
 	Als tweede heb je de Hardware container waar de Arduino (2nd-factor module) in staat.
 	Als Derde is er de Server. Deze container bevat zowel de database, API en een developer view module.
-	Vanuit de website kun je een request sturen naar de Server. In de Server zal de API component het communicieren op zich nemen 
+	Vanuit de website kun je een request sturen naar de Server. In de Server zal het API component het communiceren op zich nemen 
 	en daarbij de berichten repository bijhouden. In de Server container zal een Swagger module komen die het uittesten 
 	en bekijken van de API beschrijving faciliteert.
 	De 2nd-factor module zal bestaan uit een arduino met verschillende componenten en Wi-Fi mogelijkheid. 
