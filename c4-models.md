@@ -18,5 +18,6 @@ The next layer in the chain is supposed to give more information to the abstract
 	en daarbij de berichten repository bijhouden. In de Server container zal een Swagger module komen die het uittesten 
 	en bekijken van de API beschrijving faciliteert.
 	De 2nd-factor module zal bestaan uit een arduino met verschillende componenten en Wi-Fi mogelijkheid.
+  
   ![alt text](/c4-diagrams/C2%20-%20Container%20diagram.svg "C2")
 </details>
