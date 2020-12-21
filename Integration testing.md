@@ -1,5 +1,13 @@
 Integratietesting 2nd-factor
 
+-Normale GET request sturen
+Stuur een GET request naar de path "/generatecode"
+Zou een 200 OK status code terug moeten krijgen.
+
+Stuur een GET request naar de path "/verifycode"
+Zou een 200 OK status code terug moeten krijgen.
+
+
 -Andere API method testen
 Stuur een POST request naar de naar path "/generatecode"
 Zou een 400 Bad Request code terug moeten krijgen omdat de API geen POST requests af kan handelen, alleen GET requests.
