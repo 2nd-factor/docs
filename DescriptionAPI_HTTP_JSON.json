@@ -38,7 +38,7 @@
         "summary" : "let the server verify sent in code.",
         "description" : "After a code was sent in by the 2nd-factor module with this request you can compare the generated color-code with the 2nd-factor module one.",
         "responses" : {
-          "300" : {
+          "202" : {
             "description" : "the code you have sent in with the 2nd-factor              module is validated",
             "content" : {
               "application/json" : {
