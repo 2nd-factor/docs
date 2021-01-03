@@ -7,7 +7,7 @@ Integratietesting Hardware-Server 2nd-factor
 
 	
 - Meerdere verbindingen tegelijk maken
-	Beschrijving: Meerdere clients maken maken tegelijk verbinding met de server.
+	Beschrijving: Meerdere clients maken tegelijk verbinding met de server.
 	Verwacht resultaat: Meerdere verbinding bestaan langs elkaar.
 	Resultaat:
 	
@@ -16,12 +16,6 @@ Integratietesting Hardware-Server 2nd-factor
 	Beschrijving: Bericht "Test" wordt verstuurd naar de server.
 	Verwacht resultaat: Client krijgt response "het bericht Test is afgehandeld".
 	Resultaat:
-	
-	
-- Andere netwerkpoort gebruiken
-	Beschrijving: Er wordt verbinding gemaakt met poortnummer 3000.
-	Verwacht resultaat: Een foutmelding dat het poortnummer 3000 niet open staat.
-	Resultaat:	
 	
 	
 - Rest netwerkpoort gebruiken
