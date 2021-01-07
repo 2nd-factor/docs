@@ -10,7 +10,7 @@ The next layer in the chain is supposed to give more information to the abstract
 </details>
 <details>
   <summary><b>C2 diagram</b></summary>  
-	Er is een container met een 
+	Het systeem bestaat uit een drietal containers.
 	Als eerste heb je de Frontend-Server container waar de website opdraait.
 	Als tweede heb je de Hardware container waar de Arduino (2nd-factor module) in staat.
 	Als Derde is er de Server. Deze container bevat zowel de database, API en een developer view module.
@@ -24,8 +24,14 @@ The next layer in the chain is supposed to give more information to the abstract
 
 </details>
 <details>
-  <summary><b>C2 diagram</b></summary> 
-   Components
+  <summary><b>C3 diagram</b></summary>
+
+In het component level digram worden de hardware container en de Server verder toegelicht. Hierbij wordt dieper ingegaan op de verschillende components die zich bevinden in deze twee containers.
+
+De backend server heeft een tweetal controllers die de http requests opvangen en verder afhandelen. Verder zit er nog een developer component die de toegang van de developer bewerkstelligt. De GenerateCode controller laat via de Generate Code component de 2fa-code genereren. De VerifyCode controller bewerkstelligt dat met de Code verifier component.
+De verschillende opgevraagde codes worden opgeslagen in een database component.
+
+De code handler component heeft verbinding met de hardware container en registreert inkomende signalen en slaat deze op in de database.
 
 ![alt text](/c4-diagrams/C3%20-%20Component%20diagram.svg "C3")
 
