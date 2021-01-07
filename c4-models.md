@@ -1,6 +1,6 @@
 The following document explains the structure of our codebase.
 The c4 model is a way of describing the architecture of a software project in mutliple levels of detail.
-Layers of the c4 model are build on a certain layer of abstraction. 
+Layers of the c4 model are build on a certain layer of abstraction.
 The next layer in the chain is supposed to give more information to the abstracted part of the diagram.
 
 <details>
@@ -21,4 +21,12 @@ The next layer in the chain is supposed to give more information to the abstract
 	Deze module zal via TCP communiceren met de Server.
   
   ![alt text](/c4-diagrams/C2%20-%20Container%20diagram.svg "C2")
+
+</details>
+<details>
+  <summary><b>C2 diagram</b></summary> 
+   Components
+
+![alt text](/c4-diagrams/C3%20-%20Component%20diagram.svg "C3")
+
 </details>
