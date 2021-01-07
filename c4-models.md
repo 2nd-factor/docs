@@ -10,7 +10,7 @@ The next layer in the chain is supposed to give more information to the abstract
 </details>
 <details>
   <summary><b>C2 diagram</b></summary>  
-	Er zijn 3 verschillende containers met ieder zijn eigen componenten.
+	Er is een container met een 
 	Als eerste heb je de Frontend-Server container waar de website opdraait.
 	Als tweede heb je de Hardware container waar de Arduino (2nd-factor module) in staat.
 	Als Derde is er de Server. Deze container bevat zowel de database, API en een developer view module.
@@ -20,7 +20,7 @@ The next layer in the chain is supposed to give more information to the abstract
 	De 2nd-factor module zal bestaan uit een Arduino met verschillende componenten en Wi-Fi mogelijkheid. 
 	Deze module zal via TCP communiceren met de Server.
   
-  ![alt text](/c4-diagrams/C2%20-%20Container%20diagram.svg "C2")
+  ![alt text](/c4-diagrams/C2%20-%20Container%20diagramv2.svg "C2")
 
 </details>
 <details>
