@@ -7,7 +7,7 @@
 
 #
 
-#Integratietesting REST 2nd-factor
+**Integratietesting REST 2nd-factor
 
 deze testen testen de HTTP api van de backend en mocken de TCP verbinding.
 
