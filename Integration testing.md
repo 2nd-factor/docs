@@ -1,56 +1,3 @@
-<<<<<<< HEAD
-Integratietesting REST 2nd-factor
-
-Test_GET_CODE
-Actie: 		 Stuur een GET request naar het path /code/
-verificatie: Er zal een status 404 not found bericht verschijnen.
-
-Test_GET_GENERATE_CODE
-Actie :		 Stuur een GET request naar het path "/code/generate"
-verificatie: Er word een bericht ontvangen met daarin een kleurcode voor invoeren. 
-			 Daarnaast zal de status code 201 aanwezig zijn. 
-				
-Test_GET_VERIFY_RIGHT_CODE
-pre-actie:	 - Stuur een GET request naar het path "/code/generate"
-			 - voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
-Actie :		 Stuur een GET request naar het path "/code/verify"
-verificatie: Er word een bericht ontvangen met daarin dat de code juist is. 
-			 Daarnaast zal de status code 202 aanwezig zijn. 
-
-Test_GET_VERIFY_RIGHT_AFTER_TIMELIMIT_HAS_PASSED_CODE
-pre-actie:	 - Stuur een GET request naar het path "/code/generate"
-			 - voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
-			 - wacht 35 seconden lang
-Actie :		 Stuur een GET request naar het path "/code/verify"
-verificatie: Er word een bericht ontvangen met daarin dat de code juist is. 
-			 Daarnaast zal de status code 408 Request Timeout aanwezig zijn. 
-
-Test_GET_VERIFY_WRONG_CODE
-pre-actie:	 - voer een RANDOM code in op de 2nd-factor module en verzend dit naar de server.		 
-Actie :		 Stuur een GET request naar het path "/code/verify"
-verificatie: Er word een bericht ontvangen met daarin dat de code onjuist is. 
-			 Daarnaast zal de status code 406 Not Acceptable aanwezig zijn. 
-
-Test_GET_VERIFY_NO_CODE
-Actie :		 Stuur een GET request naar het path "/code/verify"
-verificatie: er zal een status 406  Not Acceptable bericht verschijnen.
-
-Test_POST_GENERATE_CODE
-Actie :		 Stuur een POST request naar het path "/code/generate"
-verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
-
-Test_PUT_GENERATE_CODE
-Actie :		 Stuur een PUT request naar het path "/code/generate"
-verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
-
-Test_POST_VERIFY_CODE
-Actie :		 Stuur een POST request naar het path "/code/verify"
-verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
-
-Test_PUT_VERIFY_CODE
-Actie :		 Stuur een PUT request naar het path "/code/verify"
-verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.		 
-
 =======
 # Integratietesting 2nd-factor
 
@@ -60,101 +7,77 @@ verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
 
 #
 
-## Normale GET request sturen
+#Integratietesting REST 2nd-factor
+deze testen testen de HTTP api van de backend en mocken de TCP verbinding.
 
-Hierme wordt de GET request methode getest op verschillende aspecten. Hierbij wordt als path het IP adress van de server gebruikt gevolgd door de gespecificeerde path in de verschillende tests.
+#Test_GET_CODE
 
-### GetGenerateCodeTest
+Actie: 		 Stuur een GET request naar het path /code/
+verificatie: Er zal een status 404 not found bericht verschijnen.
 
-**Instructies**
-Stuur een GET request naar de path "/generatecode"
+#Test_GET_GENERATE_CODE
 
-**Verwacht resultaat**
-De status code moet zijn 201. Verder wordt er een array object ontvangen als response met als type "String", met daarin drie velden.
+Actie :		 Stuur een GET request naar het path "/code/generate"
+verificatie: Er word een bericht ontvangen met daarin een kleurcode voor invoeren. 
+			 Daarnaast zal de status code 201 aanwezig zijn. 
+				
+#Test_GET_VERIFY_RIGHT_CODE
 
-**Daadwerkelijk resultaat:**
-...
+pre-actie:	 - Stuur een GET request naar het path "/code/generate"
+			 - voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
+Actie :		 Stuur een GET request naar het path "/code/verify"
+verificatie: Er word een bericht ontvangen met daarin dat de code juist is. 
+			 Daarnaast zal de status code 202 aanwezig zijn. 
 
-### GetVerifyCodeTest
+#Test_GET_VERIFY_RIGHT_AFTER_TIMELIMIT_HAS_PASSED_CODE
 
-**Instructies**
-Stuur een GET request naar de path "/verifycode"
+pre-actie:	 - Stuur een GET request naar het path "/code/generate"
+			 - voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
+			 - wacht 35 seconden lang
+			 
+Actie :		 Stuur een GET request naar het path "/code/verify"
 
-**Verwacht resultaat**
-De status code moet zijn 202. Verder moet er een response in het format json met als type String worden ontvangen.
+verificatie: Er word een bericht ontvangen met daarin dat de code juist is. 
+			 Daarnaast zal de status code 408 Request Timeout aanwezig zijn. 
 
-**Daadwerkelijk resultaat:**
-...
+#Test_GET_VERIFY_WRONG_CODE
 
-## Overige http request methods tests
+pre-actie:	 - voer een RANDOM code in op de 2nd-factor module en verzend dit naar de server.		 
 
-Onderstaand worden de overige http request methoden getest.
+Actie :		 Stuur een GET request naar het path "/code/verify"
 
-### PostGenerateCodeTest
+verificatie: Er word een bericht ontvangen met daarin dat de code onjuist is. 
+			 Daarnaast zal de status code 406 Not Acceptable aanwezig zijn. 
 
-**Instructies**
-Stuur een POST request naar de naar path "/generatecode"
+#Test_GET_VERIFY_NO_CODE
 
-**Verwacht resultaat**
-De response code is 400.
+Actie :		 Stuur een GET request naar het path "/code/verify"
 
-**Daadwerkelijk resultaat:**
-...
+verificatie: er zal een status 406  Not Acceptable bericht verschijnen.
 
-### PutGenerateCodeTest
+#Test_POST_GENERATE_CODE
 
-**Instructies**
-Stuur een PUT request naar path "/generatecode"
+Actie :		 Stuur een POST request naar het path "/code/generate"
 
-**Verwacht resultaat**
-De response code is 400.
+verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
 
-**Daadwerkelijk resultaat:**
-...
+#Test_PUT_GENERATE_CODE
 
-### PostVerifyCodeTest
+Actie :		 Stuur een PUT request naar het path "/code/generate"
 
-**Instructies**
-Stuur een POST request naar de naar path "/verifycode"
+verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
 
-**Verwacht resultaat**
-De response code is 400.
+#Test_POST_VERIFY_CODE
 
-**Daadwerkelijk resultaat:**
-...
+Actie :		 Stuur een POST request naar het path "/code/verify"
 
-### PutVerifyCodeTest
+verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.
 
-**Instructies**
-Stuur een PUT request naar path "/verifycode"
+#Test_PUT_VERIFY_CODE
 
-**Verwacht resultaat**
-De response code is 400.
+Actie :		 Stuur een PUT request naar het path "/code/verify"
 
-**Daadwerkelijk resultaat:**
-...
+verificatie: er zal een status 405  Method Not Allowed bericht verschijnen.		 
 
-## Ander formaat content sturen
 
-### GetBadFormatTest
 
-**Instructies**
-Stuur een GET request met als content format "application/xml"
-
-**Verwacht resultaat**
-De response code is 400.
-
-**Daadwerkelijk resultaat:**
-...
-
-### GetBadFormatTest2
-
-**Instructies**
-Stuur een GET request met als content format "application/yaml"
-
-**Verwacht resultaat**
-De response code is 400.
-
-**Daadwerkelijk resultaat:**
-...
->>>>>>> 277fa06ae6d722e3bc54b0184cbba14389c26aab
