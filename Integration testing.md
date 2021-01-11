@@ -25,7 +25,7 @@ deze testen testen de HTTP api van de backend en mocken de TCP verbinding.
 
 * pre-actie:	
 
-			1. Stuur een GET request naar het path "/code/generate".
+				1. Stuur een GET request naar het path "/code/generate".
 				
 			    2. voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
 
