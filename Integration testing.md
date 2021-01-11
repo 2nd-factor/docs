@@ -23,9 +23,10 @@ deze testen testen de HTTP api van de backend en mocken de TCP verbinding.
 				
 **Test_GET_VERIFY_RIGHT_CODE**
 
-* pre-actie:	* Stuur een GET request naar het path "/code/generate".
+* pre-actie:	
+				1. Stuur een GET request naar het path "/code/generate".
 				
-			    * voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
+			    2. voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.		 
 
 * Actie :		Stuur een GET request naar het path "/code/verify".
 * verificatie:	Er word een bericht ontvangen met daarin dat de code juist is. 
@@ -33,11 +34,12 @@ deze testen testen de HTTP api van de backend en mocken de TCP verbinding.
 
 **Test_GET_VERIFY_RIGHT_AFTER_TIMELIMIT_HAS_PASSED_CODE**
 
-* pre-actie:*	* Stuur een GET request naar het path "/code/generate".*
+* pre-actie:*	
+				1. Stuur een GET request naar het path "/code/generate".
 				
-				* voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.*		 
+				2.voer de GEGENEREERDE code in op de 2nd-factor module en verzend dit naar de server.	 
 				
-				* wacht 35 seconden lang.*
+				3.wacht 35 seconden lang.
 			 
 * Actie :		Stuur een GET request naar het path "/code/verify".
 * verificatie:	Er word een bericht ontvangen met daarin dat de code juist is. 
