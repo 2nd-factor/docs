@@ -1,6 +1,6 @@
 Integratietesting Hardware-Server 2nd-factor
 
-- **Test_Client_Server_Connection
+- **Test_Client_Server_Connection**
 	
 	* Actie: Een verbinding maken met de server en deze verbinding weer verbreken.
 	
@@ -8,7 +8,7 @@ Integratietesting Hardware-Server 2nd-factor
 		
 
 	
-- **Test_Multiple_Connection_At_Same_Time
+- **Test_Multiple_Connection_At_Same_Time**
 
 	* Actie: Meerdere TCP-clients maken tegelijk verbinding met de server.
 	
@@ -16,7 +16,7 @@ Integratietesting Hardware-Server 2nd-factor
 	
 	
 	
-- **Test_Send_Message_And_Recieve_Respond
+- **Test_Send_Message_And_Recieve_Respond**
 
 	* Actie: Bericht "Hello" wordt verstuurd naar de server.
 	
