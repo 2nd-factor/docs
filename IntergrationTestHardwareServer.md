@@ -22,9 +22,3 @@ Integratietesting Hardware-Server 2nd-factor
 	
 	* Verificatie: Client krijgt response "het bericht "Hello" is processed".
 	
-
-
-
-
-
-
