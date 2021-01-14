@@ -35,7 +35,7 @@
         "summary" : "let the server verify send in code.",
         "description" : "After a code was send in by the 2nd-factor module with this request you can compare the generated color-code withe the 2nd-factor module one.",
         "responses" : {
-          "300" : {
+          "202" : {
             "description" : "the code you have send in with the 2nd-factor              module is validated",
             "content" : {
               "application/json" : {
@@ -55,8 +55,8 @@
               }
             }
           },
-          "404" : {
-            "description" : "Not Found"
+          "408" : {
+            "description" : "You have send the code after time limit of 30              seconds has passed."
           }
         }
       }
