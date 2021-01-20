@@ -26,7 +26,7 @@ The next layer in the chain is supposed to give more information to the abstract
 <details>
   <summary><b>C3 diagram</b></summary>
 
-In het component level digram worden de hardware container en de Server verder toegelicht. Hierbij wordt dieper ingegaan op de verschillende components die zich bevinden in deze twee containers.
+In het component level diagram worden de hardware container en de Server verder toegelicht. Hierbij wordt dieper ingegaan op de verschillende components die zich bevinden in deze twee containers.
 
 De backend server heeft een tweetal controllers die de http requests opvangen en verder afhandelen. Verder zit er nog een developer component die de toegang van de developer bewerkstelligt. De GenerateCode controller laat via de Generate Code component de 2fa-code genereren. De VerifyCode controller bewerkstelligt dat met de Code verifier component.
 De verschillende opgevraagde codes worden opgeslagen in een database component.
