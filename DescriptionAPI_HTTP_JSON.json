@@ -10,36 +10,33 @@
     "description" : "User wants to authenticate with 2nd-factor module"
   } ],
   "paths" : {
-    "/generatecode" : {
+    "/code/generate" : {
       "get" : {
         "tags" : [ "User" ],
-        "summary" : "gets the latest server response.",
+        "summary" : "gets a new generated color-code.",
         "description" : "this request will return a generated color-code.",
         "responses" : {
           "201" : {
             "description" : "succesful created",
             "content" : {
-              "application/json" : {
+              "string" : {
                 "schema" : {
                   "$ref" : "#/definitions/GeneratedCode"
                 }
               }
             }
-          },
-          "404" : {
-            "description" : "Not Found"
           }
         }
       }
     },
-    "/verifycode" : {
+    "/code/verify" : {
       "get" : {
         "tags" : [ "User" ],
-        "summary" : "let the server verify sent in code.",
-        "description" : "After a code was sent in by the 2nd-factor module with this request you can compare the generated color-code with the 2nd-factor module one.",
+        "summary" : "let the server verify send in code.",
+        "description" : "After a code was send in by the 2nd-factor module with this request you can compare the generated color-code withe the 2nd-factor module one.",
         "responses" : {
           "202" : {
-            "description" : "the code you have sent in with the 2nd-factor              module is validated",
+            "description" : "the code you have send in with the 2nd-factor              module is validated",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -49,7 +46,7 @@
             }
           },
           "406" : {
-            "description" : "the code you sent in with the 2nd-factor module            is not the code that was generated.",
+            "description" : "the code you send in with the 2nd-factor module            is not the code that was generated.",
             "content" : {
               "application/json" : {
                 "schema" : {
@@ -58,8 +55,8 @@
               }
             }
           },
-          "404" : {
-            "description" : "Not Found"
+          "408" : {
+            "description" : "You have send the code after time limit of 30              seconds has passed."
           }
         }
       }
@@ -89,7 +86,7 @@
       "properties" : {
         "message" : {
           "type" : "String",
-          "example" : "Sent in code is correct/false on 15-12-2020 20:42"
+          "example" : "Send in code is correct/false on 15-12-2020 20:42"
         }
       }
     }
