@@ -18,7 +18,7 @@ De gebruiker plugt de Arduino in wanneer de server actief is.
 Zodra de Arduino is ingeschakeld, wordt met een brandend ledje bevestigd dat er een actieve verbinding is. 
 
 **Daadwerkelijk resultaat:**
-...
+Het ledje brandt zodra er een actieve verbinding aanwezig is. Deze komt tot stand zodra de 'verstuur'-knop op de Arduino wordt ingedrukt.
 
 
 ### Test AD-power_00
@@ -30,7 +30,7 @@ De gebruiker schakelt de Arduino in wanneer de server inactief is.
 Zodra de Arduino is ingeschakeld, blijft het ledje uit om te bevestigen dat er geen actieve verbinding is. 
 
 **Daadwerkelijk resultaat:**
-...
+Na indrukken 'verstuur'-knop, blijft het ledje 30 seconden uit en knippert daarna vier keer om aan te geven dat er geen actieve verbinding is.
 
 ### Test AD-colorRed_00
 
@@ -52,7 +52,7 @@ De gebruiker vult drie keer de kleur groen in bij de Arduino door het indrukken 
 Deze invoer wordt met drie groen, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 ### Test AD-colorBlue_00
 
@@ -63,7 +63,7 @@ De gebruiker vult drie keer de kleur blauw in bij de Arduino door het indrukken 
 Deze invoer wordt met drie blauwe, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 ### Test AD-colorRGB00
 
@@ -74,7 +74,7 @@ De gebruiker vult de kleuren rood, groen en blauw ieder 1x in bij de Arduino doo
 Deze invoer wordt met een rood, een groen en een blauwe brandende (RGB)-led bevestigd.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 ### Test AD-reset_00
 
@@ -86,7 +86,7 @@ Hierna drukt de gebruiker op de reset knop en vult drie keer de kleur rood in bi
 Na het invullen van de eerste reeks, worden de (RGB)-leds groen. Na het indrukken van de reset-knop gaan de (RGB)-leds allemaal uit en na het invullen van de tweede reeks, worden de (RGB)-leds rood.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 
 ## User acceptance tests op front-end
@@ -104,7 +104,7 @@ Er komt tegelijk met de kleurencode een timer in beeld die de geldige 30 seconde
 
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 ### Test FE-generate_01
 
@@ -118,7 +118,7 @@ Er komt tegelijk met de kleurencode een timer in beeld die de geldige 30 seconde
 Nadat de timer 0 seconden heeft bereikt, verschijnt de 'genereer-code'-knop weer in beeld en zowel de 'verifieer'-knop en de vervallen code verdwijnen van de pagina.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 
 ### Test FE-genVer_00
@@ -131,7 +131,7 @@ Hierna drukt hij op de 'verifieer'-knop op de website.
 Er verschijnt er een 'succes' bericht op de website.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 ### Test FE-genVer_01
 **Instructie:**
@@ -143,6 +143,6 @@ Hierna drukt hij op de 'verifieer'-knop op de website.
 Er verschijnt er een 'fout' bericht op de website.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 
