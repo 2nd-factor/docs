@@ -41,7 +41,7 @@ De gebruiker vult drie keer de kleur rood in bij de Arduino door het indrukken v
 Deze invoer wordt met drie rode, brandende (RGB)-leds bevestigd.
 
 **Daadwerkelijk resultaat:**
-...
+Zoals verwacht resultaat.
 
 ### Test AD-colorGreen_00
 
